@@ -16,7 +16,6 @@ SECRET_KEY = "supersecret"
 ALGORITHM = "HS256"
 TOKEN_EXPIRES = 30  
 
-# pwd_context = CryptContext(schemes=["bcrypt"], deprecated="auto")
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="token")
 
 pwd_context = CryptContext(schemes=["argon2"], deprecated="auto")
